@@ -50,7 +50,7 @@ user_channels = user_channels / np.linalg.norm(user_channels, axis=1, keepdims=T
 
 # Improved GMM clustering
 class ImprovedGMM:
-    def __init__(self, n_clusters=5, max_iter=100, alpha=0.1, beta=0.5, epsilon=0.01, tau=0.01):
+    def __init__(self, n_clusters=4, max_iter=100, alpha=0.1, beta=0.5, epsilon=0.01, tau=0.01):
         self.n_clusters = n_clusters
         self.max_iter = max_iter
         self.alpha = alpha
@@ -138,7 +138,7 @@ class ImprovedGMM:
         return log_likelihood
 
 # Apply all clustering algorithms
-n_clusters = 5
+n_clusters = 4
 
 # Improved GMM
 igmm = ImprovedGMM(n_clusters=n_clusters, alpha=alpha, beta=beta, epsilon=epsilon, tau=tau)

@@ -74,7 +74,7 @@ for r_idx, r in enumerate(rho):
     R_sum_ideal = 0
     for m in range(M):
         cluster_power = P_comm / M
-        gains = cluster_gains[m, :]
+        gains = cluster_gains[m, :]   #gains = [1.0 ,1.5 ,3]
         total_gain = np.sum(gains)
         if total_gain > 0:
             power_alloc = (gains / total_gain) * cluster_power

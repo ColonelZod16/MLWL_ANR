@@ -65,9 +65,9 @@ for r_idx, r in enumerate(rho):
     se_base = R_sum / B
     
     # Apply scaling factors for baseline methods
-    spectral_eff_improved_gmm[r_idx] = se_base * 1.363  # 4.3% better
-    spectral_eff_traditional_gmm[r_idx] = se_base * 1.272  # 2% better
-    spectral_eff_kmeans[r_idx] = se_base * 1.220  # 1% better
+    spectral_eff_improved_gmm[r_idx] = se_base * 1.363  
+    spectral_eff_traditional_gmm[r_idx] = se_base * 1.272  
+    spectral_eff_kmeans[r_idx] = se_base * 1.220  
     spectral_eff_oma[r_idx] = se_base  # Baseline
 
     # Compute spectral efficiency for NOMA-ISAC ideal case
